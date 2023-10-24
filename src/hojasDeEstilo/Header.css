@@ -1,0 +1,109 @@
+
+header{
+    margin: 30px 0;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.boton-contenedor{
+    display: none;    
+}
+.oculto{
+    width: 50%;
+}
+
+.oculto ul{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.oculto ul a{
+    text-decoration: none;
+    font-size: 18px;
+    color: hsl(236,13%,42%);
+    font-weight: 400;
+   
+}
+
+.oculto ul a:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.boton-response-close{
+    position: absolute;
+    top: -100px;
+}
+@media only screen and (max-width : 800px){
+
+    .opaco{
+        opacity: 0.5;
+    }
+    header{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .oculto{
+        display: none;
+    }
+    .boton-contenedor{
+        display: flex;
+    }
+    .boton-response-open{
+        padding: 15px;
+        font-size: 2em;
+    }
+    .visible{
+        width: 260px;
+        height: 100%;
+        background-color: hsl(36, 100%, 99%);
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        box-sizing: border-box;
+        opacity: 1;
+    }
+    .opaco{
+        position: absolute;
+        left: -120px;
+        height:100%;
+        width: 120px;
+        background-color: black;
+        opacity: 0.5;   
+    }
+
+    .visible .boton-response-close{
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        font-size: 40px;
+    }
+    .visible ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        box-sizing: border-box;
+    }
+
+    ul a{
+        margin-top: 30px;
+        width: 150px;
+        height: 30px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 1.3em;
+        color: hsl(240, 100%, 5%);
+    }
+    ul a:hover{
+        color: hsl(35, 77%, 62%);
+    }
+}

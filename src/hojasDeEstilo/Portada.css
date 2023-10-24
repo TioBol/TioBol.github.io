@@ -1,0 +1,38 @@
+.contenedor-principal{
+    padding: 60px;
+    width: 1200px;
+    height: 850px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-terciario{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width : 800px){
+
+    .contenedor-principal{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin: 0;
+        height: 100%;
+    }
+    
+    .contenedor-terciario{
+        position: relative;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
