@@ -6,12 +6,12 @@ import Contenido from './componentes/Contenido';
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Principal></Principal>}></Route>
-        <Route path='/:id' element={ <Contenido></Contenido> }></Route>
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/public/' element={<Principal></Principal>}></Route>
+          <Route path='/public/:id' element={ <Contenido></Contenido> }></Route>
+        </Routes>
+      </BrowserRouter>
       
     </>
   );
