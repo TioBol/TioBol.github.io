@@ -8,8 +8,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/public/' element={<Principal></Principal>}></Route>
-          <Route path='/public/:id' element={ <Contenido></Contenido> }></Route>
+          <Route path='/' element={<Principal></Principal>}></Route>
+          <Route path='/:id' element={ <Contenido></Contenido> }></Route>
         </Routes>
       </BrowserRouter>
       
